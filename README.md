@@ -70,7 +70,7 @@ Promise.all([p2, p1]).then(function(vals){
 ```
 
 ###Ajax Example
-See the [ajax example](./DeferAjaxEample.js) for the ajax wrapper being used below.
+See the [ajax example](./DeferAjaxExample.js) for the ajax wrapper being used below.
 
 ```javascript
 ajax({
