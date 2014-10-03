@@ -1,23 +1,7 @@
 /**
  * @author Christopher Keefer
  * Defer wraps the new JS Promises with a pleasantly familiar api similar to the jQuery api for
- * Deferred (but not a 1:1 copy - see details below).
- *
- * Usage:
- * var defer = Defer();
- * defer.then(function(resolveValue){
- *     // ... Do something with the value that's passed from resolve. Whatever we return from here
- *     // will be picked up on by further then or done blocks. ...
- * }).done(function(resolveValue){
- *     // ... Do something now that the entire promise chain has resolved. ...
- * }).fail(function(error){
- *     // ... Do something when reject is called on the deferred object. ...
- * });
- * // ... Do your async stuff ...
- * defer.resolve(value); // Resolve the deffered with the async-retrieved value
- * defer.reject(value); // OR reject the defer with an arbitrary value (an error message, perhaps).
- *
- * In what ways does
+ * Deferred (but not a 1:1 copy) - see README for details.
  */
 (function(root){
     var Defer = function(){
